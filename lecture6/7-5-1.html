@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Date 객체로 현재 시간 알아내기</title>
+</head>
+<body>
+<h3>Date 객체로 현재 시간 알아내기</h3>
+<hr>
+<script>
+var now = new Date(); // 현재 시간 값을 가진 Date 객체 생성
+document.write("현재 시간 : " + now.toUTCString()
++ "<br><hr>");
+var arraydata = new Array()
+arraydata[0] = now.getFullYear() 
+arraydata[1] = now.getMonth()
+arraydata[2] = now.getDate()
+arraydata[3] = now.getHours()
+arraydata[4] = now.getMinutes()
+arraydata[5] = now.getSeconds()
+arraydata[6] = now.getMilliseconds()
+console.log(`${arraydata}`);
+var next = new Date(2017, 7, 15, 12, 12, 12); // 7은 8월
+document.write("next.toLocaleString() : "
++ next.toLocaleString() + "<br>");
+</script>
+</body>
