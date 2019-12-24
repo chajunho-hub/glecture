@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gugudan</title>
+    <script>
+    // function gugudan(n){
+    //     if (isNaN(n)||n<1||n>9){
+    //     alert("잘못된 숫자를 입력하셨습니다.");
+    //     return ;
+    //     }
+    //     for (var i=1; i<10; i++){
+    //         document.write(`${n} x ${i} = ${n*i} <br>`);
+    //     }
+    // }
+    var gugudan=()=>{
+        for (var i=1; i<10; i++){
+            for (var j=1; j<10; j++){
+                document.write(`${j} x ${i} = ${j*i}`);
+            }
+            document.write("<br>");
+        }
+    }
+    </script>
+</head>
+<body>
+    <h3> GuguDan </h3>   
+    <hr>
+    <script>
+        gugudan();
+    </script>
+</body>
+</html>
